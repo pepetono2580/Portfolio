@@ -1,16 +1,16 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+import streamlit as st
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+col1, col2 = st.columns(2)
 
+with col1:
+    st.image("images/jrasg.jpeg", width=300)
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+with col2:
+    st.title("José A. Rasgado")
+    content = """
+    Hello! I'm José and I am a Python developer, I graduated in 2021 as a Software Engineer from Anáhuac Mayab University.
+    Since then, I've worked in multiple companies using different tools, such as No-Code technologies like Bubble and RPA
+    platforms such as Automation Anywhere, which led me to learn Python and create the projects presented in this portfolio.
+    """
+    st.info(content)
